@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Transformador")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+986a82419234389285b3c539b64c011b7b12dd8b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0320119f2bde5bd8363a2da3dd9ed4e93575d20")]
 [assembly: System.Reflection.AssemblyProductAttribute("Transformador")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Transformador")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

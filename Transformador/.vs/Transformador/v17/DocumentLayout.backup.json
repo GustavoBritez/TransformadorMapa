@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|c:\\users\\navegador\\desktop\\test\\pp\\transformador\\transformador\\archivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|solutionrelative:transformador\\archivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|c:\\users\\navegador\\desktop\\test\\pp\\transformador\\transformador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|solutionrelative:transformador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|c:\\users\\navegador\\desktop\\test\\pp\\transformador\\transformador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\transformador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|solutionrelative:transformador\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|c:\\users\\navegador\\desktop\\test\\pp\\transformador\\transformador\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|solutionrelative:transformador\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|c:\\users\\navegador\\desktop\\test\\pp\\transformador\\transformador\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|solutionrelative:transformador\\form1.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|c:\\users\\navegador\\desktop\\test\\pp\\transformador\\transformador\\archivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F0754EC-2357-4333-A8C8-74BB941F4451}|Transformador\\Transformador.csproj|solutionrelative:transformador\\archivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +30,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Transformador\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Form1.Designer.cs",
+              "RelativeToolTip": "Transformador\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-29T21:21:17.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.resx",
+              "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Form1.resx",
+              "RelativeDocumentMoniker": "Transformador\\Form1.resx",
+              "ToolTip": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Form1.resx",
+              "RelativeToolTip": "Transformador\\Form1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-29T21:35:33.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Form1.cs",
               "RelativeDocumentMoniker": "Transformador\\Form1.cs",
               "ToolTip": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Form1.cs",
               "RelativeToolTip": "Transformador\\Form1.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAcwB8AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAKQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T20:57:58.045Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Archivo.cs",
               "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Archivo.cs",
               "RelativeDocumentMoniker": "Transformador\\Archivo.cs",
               "ToolTip": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Archivo.cs",
               "RelativeToolTip": "Transformador\\Archivo.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T20:49:50.742Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-29T20:49:50.742Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Form1.cs",
               "RelativeDocumentMoniker": "Transformador\\Form1.cs",
               "ToolTip": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "Transformador\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-29T20:49:20.996Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2026-05-29T20:49:20.996Z"
             }
           ]
         }
