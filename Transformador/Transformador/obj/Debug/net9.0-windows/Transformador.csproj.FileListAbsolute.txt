@@ -1,0 +1,17 @@
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\bin\Debug\net9.0-windows\Transformador.exe
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\bin\Debug\net9.0-windows\Transformador.deps.json
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\bin\Debug\net9.0-windows\Transformador.runtimeconfig.json
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\bin\Debug\net9.0-windows\Transformador.dll
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\bin\Debug\net9.0-windows\Transformador.pdb
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.Form1.resources
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.csproj.GenerateResource.cache
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.AssemblyInfoInputs.cache
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.AssemblyInfo.cs
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.csproj.CoreCompileInputs.cache
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.sourcelink.json
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.dll
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\refint\Transformador.dll
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.pdb
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.genruntimeconfig.cache
+C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\ref\Transformador.dll
