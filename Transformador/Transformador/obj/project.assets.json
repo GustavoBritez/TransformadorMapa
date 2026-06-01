@@ -1,31 +1,26 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
-    "net9.0-windows7.0": {}
+    "net9.0-windows": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net9.0-windows7.0": []
+    "net9.0-windows": []
   },
   "packageFolders": {
-    "C:\\Users\\Navegador\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Laboratorio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Transformador.csproj",
+      "projectUniqueName": "C:\\Users\\Laboratorio\\Desktop\\ING\\Nueva carpeta\\Transformador\\Transformador\\Transformador\\Transformador.csproj",
       "projectName": "Transformador",
-      "projectPath": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\Transformador.csproj",
-      "packagesPath": "C:\\Users\\Navegador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Navegador\\Desktop\\Test\\PP\\Transformador\\Transformador\\obj\\",
+      "projectPath": "C:\\Users\\Laboratorio\\Desktop\\ING\\Nueva carpeta\\Transformador\\Transformador\\Transformador\\Transformador.csproj",
+      "packagesPath": "C:\\Users\\Laboratorio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Laboratorio\\Desktop\\ING\\Nueva carpeta\\Transformador\\Transformador\\Transformador\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Navegador\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Laboratorio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,12 +28,11 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
-        "C:\\Users\\Navegador\\SQLClient": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net9.0-windows7.0": {
+        "net9.0-windows": {
+          "framework": "net9.0-windows7.0",
           "targetAlias": "net9.0-windows",
           "projectReferences": {}
         }
@@ -53,10 +47,11 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
-      "net9.0-windows7.0": {
+      "net9.0-windows": {
+        "framework": "net9.0-windows7.0",
         "targetAlias": "net9.0-windows",
         "imports": [
           "net461",
@@ -77,7 +72,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

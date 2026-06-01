@@ -1,6 +1,6 @@
 ﻿namespace Transformador
 {
-    partial class Form1
+    partial class VistaMapas
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,12 +29,10 @@
         private void InitializeComponent()
         {
             dgvMEsperado = new DataGridView();
-            btnActualizar = new Button();
-            btnMEsperado = new Button();
-            btnMEnviado = new Button();
-            dgvMEnviado = new DataGridView();
+            btnSubir = new Button();
             label1 = new Label();
             label2 = new Label();
+            dgvMEnviado = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dgvMEsperado).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvMEnviado).BeginInit();
             SuspendLayout();
@@ -44,51 +42,23 @@
             dgvMEsperado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvMEsperado.Location = new Point(12, 12);
             dgvMEsperado.Name = "dgvMEsperado";
-            dgvMEsperado.Size = new Size(616, 550);
+            dgvMEsperado.Size = new Size(928, 674);
             dgvMEsperado.TabIndex = 0;
             // 
-            // btnActualizar
+            // btnSubir
             // 
-            btnActualizar.Location = new Point(713, 568);
-            btnActualizar.Name = "btnActualizar";
-            btnActualizar.Size = new Size(129, 38);
-            btnActualizar.TabIndex = 1;
-            btnActualizar.Text = "Actualizar";
-            btnActualizar.UseVisualStyleBackColor = true;
-            btnActualizar.Click += btnActualizar_Click;
-            // 
-            // btnMEsperado
-            // 
-            btnMEsperado.Location = new Point(443, 568);
-            btnMEsperado.Name = "btnMEsperado";
-            btnMEsperado.Size = new Size(129, 38);
-            btnMEsperado.TabIndex = 2;
-            btnMEsperado.Text = "MEsperado";
-            btnMEsperado.UseVisualStyleBackColor = true;
-            btnMEsperado.Click += btnMEsperado_Click;
-            // 
-            // btnMEnviado
-            // 
-            btnMEnviado.Location = new Point(578, 568);
-            btnMEnviado.Name = "btnMEnviado";
-            btnMEnviado.Size = new Size(129, 38);
-            btnMEnviado.TabIndex = 3;
-            btnMEnviado.Text = "MEnviado";
-            btnMEnviado.UseVisualStyleBackColor = true;
-            btnMEnviado.Click += btnMEnviado_Click;
-            // 
-            // dgvMEnviado
-            // 
-            dgvMEnviado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMEnviado.Location = new Point(646, 12);
-            dgvMEnviado.Name = "dgvMEnviado";
-            dgvMEnviado.Size = new Size(616, 550);
-            dgvMEnviado.TabIndex = 4;
+            btnSubir.Location = new Point(825, 692);
+            btnSubir.Name = "btnSubir";
+            btnSubir.Size = new Size(129, 38);
+            btnSubir.TabIndex = 3;
+            btnSubir.Text = "Subir Mapas";
+            btnSubir.UseVisualStyleBackColor = true;
+            btnSubir.Click += btnSubir_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(165, 568);
+            label1.Location = new Point(249, 692);
             label1.Name = "label1";
             label1.Size = new Size(66, 15);
             label1.TabIndex = 5;
@@ -97,25 +67,31 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(1005, 568);
+            label2.Location = new Point(1424, 692);
             label2.Name = "label2";
             label2.Size = new Size(60, 15);
             label2.TabIndex = 6;
             label2.Text = "MEnviado";
             // 
-            // Form1
+            // dgvMEnviado
+            // 
+            dgvMEnviado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvMEnviado.Location = new Point(946, 15);
+            dgvMEnviado.Name = "dgvMEnviado";
+            dgvMEnviado.Size = new Size(741, 671);
+            dgvMEnviado.TabIndex = 4;
+            // 
+            // VistaMapas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1300, 618);
+            ClientSize = new Size(1699, 734);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(dgvMEnviado);
-            Controls.Add(btnMEnviado);
-            Controls.Add(btnMEsperado);
-            Controls.Add(btnActualizar);
+            Controls.Add(btnSubir);
             Controls.Add(dgvMEsperado);
-            Name = "Form1";
+            Name = "VistaMapas";
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dgvMEsperado).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvMEnviado).EndInit();
@@ -128,9 +104,9 @@
         private DataGridView dgvMEsperado;
         private Button btnActualizar;
         private Button btnMEsperado;
-        private Button btnMEnviado;
-        private DataGridView dgvMEnviado;
+        private Button btnSubir;
         private Label label1;
         private Label label2;
+        private DataGridView dgvMEnviado;
     }
 }

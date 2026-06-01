@@ -15,3 +15,22 @@ C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-
 C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.pdb
 C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.genruntimeconfig.cache
 C:\Users\Navegador\Desktop\Test\PP\Transformador\Transformador\obj\Debug\net9.0-windows\ref\Transformador.dll
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\bin\Debug\net9.0-windows\Transformador.exe
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.csproj.GenerateResource.cache
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.AssemblyInfoInputs.cache
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.AssemblyInfo.cs
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.csproj.CoreCompileInputs.cache
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.sourcelink.json
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.dll
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\refint\Transformador.dll
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.pdb
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\bin\Debug\net9.0-windows\Transformador.deps.json
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\bin\Debug\net9.0-windows\Transformador.runtimeconfig.json
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\bin\Debug\net9.0-windows\Transformador.dll
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\bin\Debug\net9.0-windows\Transformador.pdb
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.genruntimeconfig.cache
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\ref\Transformador.dll
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.Archivo.resources
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.VistaMapas.resources
+C:\Users\Laboratorio\Desktop\ING\Nueva carpeta\Transformador\Transformador\Transformador\obj\Debug\net9.0-windows\Transformador.FormCarga.resources
