@@ -16,13 +16,17 @@ namespace Transformador
 
         private void btnCargar_Click(object sender, EventArgs e)
         {
+            var (LineasEsperado, LineasEnviado) = Archivo.LeerMapasDesdeArchivo();
 
-            LineasEsperado = RMEsperado.Lines;
-            LineasEnviado = RMEnviado.Lines;
+            if (LineasEsperado.Length > 0 && LineasEnviado.Length > 0)
+            {
+                // Asignamos las matrices/arrays resultantes a tus propiedades
+                this.LineasEsperado = LineasEsperado;
+                this.LineasEnviado = LineasEnviado;
 
-            this.DialogResult = DialogResult.OK;
-
-            this.Close();
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
