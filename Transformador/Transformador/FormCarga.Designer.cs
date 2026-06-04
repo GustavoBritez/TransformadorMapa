@@ -33,6 +33,7 @@
             RMEnviado = new RichTextBox();
             RMEsperado = new RichTextBox();
             btnCargar = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label2
@@ -71,19 +72,32 @@
             // 
             // btnCargar
             // 
+            btnCargar.BackColor = Color.FromArgb(128, 255, 128);
             btnCargar.Location = new Point(544, 410);
             btnCargar.Name = "btnCargar";
             btnCargar.Size = new Size(75, 23);
             btnCargar.TabIndex = 5;
             btnCargar.Text = "CARGAR";
-            btnCargar.UseVisualStyleBackColor = true;
+            btnCargar.UseVisualStyleBackColor = false;
             btnCargar.Click += btnCargar_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Red;
+            button1.Location = new Point(544, 7);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 10;
+            button1.Text = "Cancelar";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // FormCarga
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1175, 441);
+            Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(RMEnviado);
@@ -104,5 +118,6 @@
         private RichTextBox RMEnviado;
         private RichTextBox RMEsperado;
         private Button btnCargar;
+        private Button button1;
     }
 }
