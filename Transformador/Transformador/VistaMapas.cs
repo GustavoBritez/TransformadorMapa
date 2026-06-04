@@ -12,16 +12,14 @@ namespace Transformador
             InitializeComponent();
         }
 
-        // Evento que abre el formulario de carga
         private void btnSubir_Click(object sender, EventArgs e)
         {
-            // Instanciamos el formulario secundario
+
             using (FormCarga formCarga = new FormCarga())
             {
-                // Mostramos el formulario y esperamos a que el usuario presione "Cargar" (DialogResult.OK)
+
                 if (formCarga.ShowDialog() == DialogResult.OK)
                 {
-                    // Si todo salió bien, le pasamos los datos a los DataGridViews
                     CargarMapaEspecifico(formCarga.LineasEsperado, dgvMEsperado);
                     CargarMapaEspecifico(formCarga.LineasEnviado, dgvMEnviado);
                 }
@@ -33,7 +31,7 @@ namespace Transformador
         /// </summary>
         private void CargarMapaEspecifico(string[] lineasBrutas, DataGridView dgv)
         {
-            
+
             string[] lineas = lineasBrutas.Where(l => !string.IsNullOrWhiteSpace(l)).ToArray();
 
             if (lineas == null || lineas.Length == 0)
@@ -44,9 +42,9 @@ namespace Transformador
             }
 
             int filas = lineas.Length;
-
-            
             int columnasMaximas = 0;
+
+
             for (int f = 0; f < filas; f++)
             {
                 if (lineas[f].Length > columnasMaximas)
@@ -54,6 +52,7 @@ namespace Transformador
                     columnasMaximas = lineas[f].Length;
                 }
             }
+
 
             dgv.Rows.Clear();
             dgv.Columns.Clear();
@@ -63,12 +62,12 @@ namespace Transformador
             dgv.ReadOnly = true;
             dgv.SelectionMode = DataGridViewSelectionMode.CellSelect;
 
+
             typeof(DataGridView).InvokeMember("DoubleBuffered",
                 System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.SetProperty,
                 null, dgv, new object[] { true });
 
             int dimensionCelda = 18;
-
 
             for (int c = 0; c < columnasMaximas; c++)
             {
@@ -89,9 +88,9 @@ namespace Transformador
                 {
                     DataGridViewCell celda = dgv.Rows[f].Cells[c];
 
-
                     if (c < lineaActual.Length)
                     {
+
                         char caracter = lineaActual[c];
                         celda.Value = caracter.ToString();
                         PintarCeldaSegunCaracter(celda, caracter);
@@ -99,8 +98,9 @@ namespace Transformador
                     else
                     {
 
-                        celda.Value = "*";
-                        PintarCeldaSegunCaracter(celda, '*');
+                        celda.Value = "";
+                        celda.Style.BackColor = Color.Black;
+                        celda.Style.ForeColor = Color.Black;
                     }
                 }
             }
@@ -146,7 +146,7 @@ namespace Transformador
                     break;
                 case '*':
                     celda.Style.BackColor = Color.FromArgb(235, 235, 235);
-                    celda.Style.ForeColor = Color.DarkGray;
+                    celda.Style.ForeColor = Color.DarkRed;
                     break;
                 default:
                     celda.Style.BackColor = Color.Orange;

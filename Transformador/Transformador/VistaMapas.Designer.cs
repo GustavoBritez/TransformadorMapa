@@ -76,22 +76,23 @@
             // dgvMEnviado
             // 
             dgvMEnviado.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvMEnviado.Location = new Point(946, 15);
+            dgvMEnviado.Location = new Point(946, 12);
             dgvMEnviado.Name = "dgvMEnviado";
-            dgvMEnviado.Size = new Size(741, 671);
+            dgvMEnviado.Size = new Size(928, 674);
             dgvMEnviado.TabIndex = 4;
             // 
             // VistaMapas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1699, 734);
+            ClientSize = new Size(1881, 734);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(dgvMEnviado);
             Controls.Add(btnSubir);
             Controls.Add(dgvMEsperado);
             Name = "VistaMapas";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)dgvMEsperado).EndInit();
             ((System.ComponentModel.ISupportInitialize)dgvMEnviado).EndInit();

@@ -79,7 +79,7 @@
             btnCargar.UseVisualStyleBackColor = true;
             btnCargar.Click += btnCargar_Click;
             // 
-            // Form1
+            // FormCarga
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -90,7 +90,8 @@
             Controls.Add(RMEsperado);
             Controls.Add(btnCargar);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form1";
+            Name = "FormCarga";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);
             PerformLayout();

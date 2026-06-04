@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Laboratorio\\Desktop\\ING\\Nueva carpeta\\Transformador\\Transformador\\Transformador\\Transformador.csproj",
+      "projectUniqueName": "C:\\Users\\Laboratorio\\Desktop\\MAPS\\Transform\\Transformador\\Transformador\\Transformador.csproj",
       "projectName": "Transformador",
-      "projectPath": "C:\\Users\\Laboratorio\\Desktop\\ING\\Nueva carpeta\\Transformador\\Transformador\\Transformador\\Transformador.csproj",
+      "projectPath": "C:\\Users\\Laboratorio\\Desktop\\MAPS\\Transform\\Transformador\\Transformador\\Transformador.csproj",
       "packagesPath": "C:\\Users\\Laboratorio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Laboratorio\\Desktop\\ING\\Nueva carpeta\\Transformador\\Transformador\\Transformador\\obj\\",
+      "outputPath": "C:\\Users\\Laboratorio\\Desktop\\MAPS\\Transform\\Transformador\\Transformador\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Laboratorio\\AppData\\Roaming\\NuGet\\NuGet.Config",
