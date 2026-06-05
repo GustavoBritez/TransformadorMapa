@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Linq; // Agregado para poder limpiar líneas vacías
 using System.Windows.Forms;
@@ -7,6 +7,11 @@ namespace Transformador
 {
     public partial class VistaMapas : Form
     {
+        public VistaMapas()
+        {
+            InitializeComponent();
+        }
+
         public VistaMapas()
         {
             InitializeComponent();
@@ -157,32 +162,6 @@ namespace Transformador
                     celda.Style.ForeColor = Color.Black;
                     celda.Style.Font = new Font(celda.DataGridView.Font, FontStyle.Bold);
                     break;
-            }
-        }
-
-        private void DgvMEsperado_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
-            {
-                SincronizarSeleccion(dgvMEsperado, dgvMEnviado, e.RowIndex, e.ColumnIndex);
-            }
-        }
-
-        private void DgvMEnviado_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
-            {
-                SincronizarSeleccion(dgvMEnviado, dgvMEsperado, e.RowIndex, e.ColumnIndex);
-            }
-        }
-
-        private void SincronizarSeleccion(DataGridView origen, DataGridView destino, int fila, int columna)
-        {
-            // Verificar que la celda existe en el destino
-            if (fila < destino.Rows.Count && columna < destino.Columns.Count)
-            {
-                destino.ClearSelection();
-                destino.Rows[fila].Cells[columna].Selected = true;
             }
         }
     }
