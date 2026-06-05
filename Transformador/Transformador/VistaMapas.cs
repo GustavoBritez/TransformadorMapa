@@ -14,14 +14,43 @@ namespace Transformador
 
         private void btnSubir_Click(object sender, EventArgs e)
         {
-
             using (FormCarga formCarga = new FormCarga())
             {
-
                 if (formCarga.ShowDialog() == DialogResult.OK)
                 {
+                    dgvMEsperado.CurrentCellChanged -= Grid_CurrentCellChanged;
+                    dgvMEnviado.CurrentCellChanged -= Grid_CurrentCellChanged;
+
                     CargarMapaEspecifico(formCarga.LineasEsperado, dgvMEsperado);
-                    CargarMapaEspecifico(formCarga.LineasEnviado, dgvMEnviado , formCarga.LineasEsperado);
+                    CargarMapaEspecifico(formCarga.LineasEnviado, dgvMEnviado, formCarga.LineasEsperado);
+
+                    dgvMEsperado.CurrentCellChanged += Grid_CurrentCellChanged;
+                    dgvMEnviado.CurrentCellChanged += Grid_CurrentCellChanged;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Sincroniza la celda seleccionada entre dgvMEsperado y dgvMEnviado en tiempo real.
+        /// </summary>
+        private void Grid_CurrentCellChanged(object sender, EventArgs e)
+        {
+            DataGridView gridOrigen = (DataGridView)sender;
+
+            DataGridView gridDestino = (gridOrigen == dgvMEsperado) ? dgvMEnviado : dgvMEsperado;
+
+            if (gridOrigen.CurrentCell != null && gridDestino.Rows.Count > 0 && gridDestino.Columns.Count > 0)
+            {
+                int fila = gridOrigen.CurrentCell.RowIndex;
+                int columna = gridOrigen.CurrentCell.ColumnIndex;
+
+                if (fila < gridDestino.Rows.Count && columna < gridDestino.Columns.Count)
+                {
+                    gridDestino.CurrentCellChanged -= Grid_CurrentCellChanged;
+
+                    gridDestino.CurrentCell = gridDestino.Rows[fila].Cells[columna];
+
+                    gridDestino.CurrentCellChanged += Grid_CurrentCellChanged;
                 }
             }
         }
@@ -79,7 +108,6 @@ namespace Transformador
 
                 string lineaActual = lineas[f];
 
-                // Limpiamos las líneas de comparación de espacios vacíos para asegurar coincidencia exacta de índices de fila
                 string[] lineasEsperadasFiltradas = lineasBaseComparacion?.Where(l => !string.IsNullOrWhiteSpace(l)).ToArray();
 
                 for (int c = 0; c < columnasMaximas; c++)
@@ -91,16 +119,13 @@ namespace Transformador
                         char caracterActual = lineaActual[c];
                         celda.Value = caracterActual.ToString();
 
-                        // --- LÓGICA DE DETECCIÓN DE ERRORES ---
                         bool esError = false;
                         if (lineasEsperadasFiltradas != null)
                         {
-                            // Verificamos si la fila y la columna existen en el mapa esperado
                             if (f < lineasEsperadasFiltradas.Length && c < lineasEsperadasFiltradas[f].Length)
                             {
                                 char caracterEsperado = lineasEsperadasFiltradas[f][c];
 
-                                // Si no coinciden los caracteres, se marca como error
                                 if (caracterActual != caracterEsperado)
                                 {
                                     esError = true;
@@ -108,21 +133,18 @@ namespace Transformador
                             }
                             else
                             {
-                                // Si el mapa enviado tiene más filas o columnas que el esperado, es un error de demasía
                                 esError = true;
                             }
                         }
 
                         if (esError)
                         {
-                            // Si no coincide, ignoramos el switch y forzamos el color ROJO
                             celda.Style.BackColor = Color.Red;
                             celda.Style.ForeColor = Color.White;
                             celda.Style.Font = new Font(dgv.Font, FontStyle.Bold);
                         }
                         else
                         {
-                            // Si coincide (o es el mapa esperado original), se pinta con su color normal
                             PintarCeldaSegunCaracter(celda, caracterActual);
                         }
                     }
@@ -184,5 +206,6 @@ namespace Transformador
                     break;
             }
         }
+
     }
 }
