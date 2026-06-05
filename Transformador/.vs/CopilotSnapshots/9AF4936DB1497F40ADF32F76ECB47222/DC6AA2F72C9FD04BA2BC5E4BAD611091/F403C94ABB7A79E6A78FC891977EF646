@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Drawing;
 using System.Linq; // Agregado para poder limpiar líneas vacías
 using System.Windows.Forms;
@@ -181,7 +181,7 @@ namespace Transformador
 
         private void SincronizarSeleccion(DataGridView origen, DataGridView destino, int fila, int columna)
         {
-            // Verifica que la celda existe en el destino
+            // Verificar que la celda existe en el destino
             if (fila < destino.Rows.Count && columna < destino.Columns.Count)
             {
                 destino.ClearSelection();
@@ -202,11 +202,11 @@ namespace Transformador
                     var celdaEsperado = dgvMEsperado.Rows[fila].Cells[columna];
                     var celdaEnviado = dgvMEnviado.Rows[fila].Cells[columna];
 
-                   
+                    // Obtener los valores de las celdas
                     string valorEsperado = celdaEsperado.Value?.ToString() ?? string.Empty;
                     string valorEnviado = celdaEnviado.Value?.ToString() ?? string.Empty;
 
-                    
+                    // Si son diferentes, cambiar el color del texto en dgvMEnviado a rojo
                     if (valorEsperado != valorEnviado)
                     {
                         celdaEnviado.Style.ForeColor = Color.Red;
