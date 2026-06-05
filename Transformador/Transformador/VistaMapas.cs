@@ -21,7 +21,7 @@ namespace Transformador
                 if (formCarga.ShowDialog() == DialogResult.OK)
                 {
                     CargarMapaEspecifico(formCarga.LineasEsperado, dgvMEsperado);
-                    CargarMapaEspecifico(formCarga.LineasEnviado, dgvMEnviado);
+                    CargarMapaEspecifico(formCarga.LineasEnviado, dgvMEnviado , formCarga.LineasEsperado);
                 }
             }
         }
@@ -29,9 +29,8 @@ namespace Transformador
         /// <summary>
         /// Recibe directamente las líneas de texto y las dibuja en el grid.
         /// </summary>
-        private void CargarMapaEspecifico(string[] lineasBrutas, DataGridView dgv)
+        private void CargarMapaEspecifico(string[] lineasBrutas, DataGridView dgv, string[] lineasBaseComparacion = null)
         {
-
             string[] lineas = lineasBrutas.Where(l => !string.IsNullOrWhiteSpace(l)).ToArray();
 
             if (lineas == null || lineas.Length == 0)
@@ -44,7 +43,6 @@ namespace Transformador
             int filas = lineas.Length;
             int columnasMaximas = 0;
 
-
             for (int f = 0; f < filas; f++)
             {
                 if (lineas[f].Length > columnasMaximas)
@@ -53,7 +51,6 @@ namespace Transformador
                 }
             }
 
-
             dgv.Rows.Clear();
             dgv.Columns.Clear();
             dgv.ColumnHeadersVisible = false;
@@ -61,7 +58,6 @@ namespace Transformador
             dgv.AllowUserToAddRows = false;
             dgv.ReadOnly = true;
             dgv.SelectionMode = DataGridViewSelectionMode.CellSelect;
-
 
             typeof(DataGridView).InvokeMember("DoubleBuffered",
                 System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.SetProperty,
@@ -76,7 +72,6 @@ namespace Transformador
                 dgv.Columns.Add(col);
             }
 
-
             for (int f = 0; f < filas; f++)
             {
                 dgv.Rows.Add();
@@ -84,27 +79,61 @@ namespace Transformador
 
                 string lineaActual = lineas[f];
 
+                // Limpiamos las líneas de comparación de espacios vacíos para asegurar coincidencia exacta de índices de fila
+                string[] lineasEsperadasFiltradas = lineasBaseComparacion?.Where(l => !string.IsNullOrWhiteSpace(l)).ToArray();
+
                 for (int c = 0; c < columnasMaximas; c++)
                 {
                     DataGridViewCell celda = dgv.Rows[f].Cells[c];
 
                     if (c < lineaActual.Length)
                     {
+                        char caracterActual = lineaActual[c];
+                        celda.Value = caracterActual.ToString();
 
-                        char caracter = lineaActual[c];
-                        celda.Value = caracter.ToString();
-                        PintarCeldaSegunCaracter(celda, caracter);
+                        // --- LÓGICA DE DETECCIÓN DE ERRORES ---
+                        bool esError = false;
+                        if (lineasEsperadasFiltradas != null)
+                        {
+                            // Verificamos si la fila y la columna existen en el mapa esperado
+                            if (f < lineasEsperadasFiltradas.Length && c < lineasEsperadasFiltradas[f].Length)
+                            {
+                                char caracterEsperado = lineasEsperadasFiltradas[f][c];
+
+                                // Si no coinciden los caracteres, se marca como error
+                                if (caracterActual != caracterEsperado)
+                                {
+                                    esError = true;
+                                }
+                            }
+                            else
+                            {
+                                // Si el mapa enviado tiene más filas o columnas que el esperado, es un error de demasía
+                                esError = true;
+                            }
+                        }
+
+                        if (esError)
+                        {
+                            // Si no coincide, ignoramos el switch y forzamos el color ROJO
+                            celda.Style.BackColor = Color.Red;
+                            celda.Style.ForeColor = Color.White;
+                            celda.Style.Font = new Font(dgv.Font, FontStyle.Bold);
+                        }
+                        else
+                        {
+                            // Si coincide (o es el mapa esperado original), se pinta con su color normal
+                            PintarCeldaSegunCaracter(celda, caracterActual);
+                        }
                     }
                     else
                     {
-
                         celda.Value = "";
                         celda.Style.BackColor = Color.Black;
                         celda.Style.ForeColor = Color.Black;
                     }
                 }
             }
-
             dgv.ClearSelection();
         }
 
